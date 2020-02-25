@@ -1,0 +1,4 @@
+string cmd
+uint8[] input
+---
+uint8[] output

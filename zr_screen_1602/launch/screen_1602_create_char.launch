@@ -1,0 +1,20 @@
+<launch>
+    <node pkg="rosserial_python" type="serial_node.py" name="serial_node_com7" output="screen" respawn="true" >
+        <param name="port" value="COM7" type="string" />
+        <param name="baud" value="500000" type="int" />
+        <remap from="screen_1602" to="zzz/screen_1602"/>
+        <remap from="zr_hw_cmd" to="zzzros/srv"/>
+    </node>
+ 
+    <!--
+    <node pkg="zr_hw_cmd" type="cmd_srv_client.py" name="cmdclient" output="screen" respawn="true" >        
+        <remap from="zr_hw_cmd" to="zzzros/srv"/>
+    </node>
+      -->
+     <!--  -->
+    <node pkg="zr_screen_1602" type="screen_1602_create_char.py" name="screen_1602_create_char_node" output="screen" respawn="true" >
+        <remap from="zr_hw_cmd" to="zzzros/srv"/>
+        <remap from="screen_1602" to="zzz/screen_1602"/>
+    </node>
+    
+</launch>

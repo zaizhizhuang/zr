@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>zr_led8_595</name>
+  <version>0.0.1</version>
+  <description>The zr_led8_595 package</description>
+  <maintainer email="278667286@qq.com">ZZZ</maintainer>
+  <license>MIT</license>
+  <url type="website">https://github.com/zaizhizhuang</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <exec_depend>rospy</exec_depend>
+
+  <export></export>
+</package>

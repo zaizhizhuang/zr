@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="zr_hw_info" type="info_srv_server.py" name="infoserver" output="screen" respawn="true" >
+
+        <remap from="zr_hw_info" to="zzzros/srv"/>
+    </node>
+    <node pkg="zr_hw_info" type="info_srv_client.py" name="infoclient" output="screen" respawn="true" >
+        
+        <remap from="zr_hw_info" to="zzzros/srv"/>
+    </node>
+
+</launch>
