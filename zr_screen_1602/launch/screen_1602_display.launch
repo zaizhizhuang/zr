@@ -8,15 +8,5 @@
     <node pkg="zr_screen_1602" type="screen_1602_pub.py" name="screen_1602_pub_node" output="log" respawn="true" >
         <remap from="screen_1602" to="zzz/screen_1602"/>
         <param name="rate_param" value="10" type="int" />
-    </node>
-    <!--
-    <node pkg="zr_hw_cmd" type="cmd_srv_client.py" name="cmdclient" output="screen" respawn="true" >        
-        <remap from="zr_hw_cmd" to="zzzros/srv"/>
-    </node>
-      -->
-     <!--  -->
-    <node pkg="zr_screen_1602" type="screen_1602_create_char.py" name="screen_1602_create_char_node" output="screen" respawn="true" >
-        <remap from="zr_hw_cmd" to="zzzros/srv"/>
-    </node>
-    
+    </node>    
 </launch>

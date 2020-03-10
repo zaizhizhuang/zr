@@ -1,0 +1,13 @@
+<launch>
+    <node pkg="rosserial_python" type="serial_node.py" name="serial_node_com7" output="screen" respawn="true" >
+        <param name="port" value="COM3" type="string" />
+        <param name="baud" value="500000" type="int" />
+        <remap from="led8_data8" to="zzz/led8"/>
+        <remap from="zr_hw_cmd" to="zzzros/srv_cmd"/>
+    </node>
+    <node pkg="zr_led8_595" type="led8_pc.py" name="led8_pc_node" output="screen" respawn="true" >
+        <remap from="led8_data8" to="zzz/led8"/>
+        <param name="rate_param" value="30" type="int" />
+        <remap from="zr_hw_cmd" to="zzzros/srv_cmd"/>
+    </node>
+</launch>

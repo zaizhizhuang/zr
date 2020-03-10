@@ -8,7 +8,8 @@ def main():
     srv_name='zr_hw_cmd'
     
     rospy.wait_for_service(srv_name)
-    reqlist=["name","version","brand","copyright","cmd1","cmd2"]
+    reqlistdescr=["name","version","brand","copyright","cmd1","cmd2"]
+    reqlist=["n","v","b","c","cmd1","cmd2"]
     reqlen=len(reqlist)
     i=0
     while(1):

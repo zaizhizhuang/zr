@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(DIRECTORY msg FILES
   led8_data8.msg
   screen_1602.msg
+  bit8_data.msg
 )
 add_service_files(DIRECTORY srv FILES
   hw_info.srv

@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="zr_ledkey_1638" type="ledkey_pc.py" name="ledkey_pc_node" output="screen" respawn="true" >
+        <remap from="led8_data8" to="zzz/led8"/>
+    </node>
+    <node pkg="zr_ledkey_1638" type="ledkey_embd.py" name="ledkey_embd_node" output="screen" respawn="true" >
+        <remap from="led8_data8" to="zzz/led8"/>
+    </node>
+</launch>

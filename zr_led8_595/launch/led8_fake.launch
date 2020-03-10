@@ -1,8 +1,8 @@
 <launch>
-    <node pkg="zr_led8_595" type="led8_pub.py" name="led8_pub_node" output="screen" respawn="true" >
+    <node pkg="zr_led8_595" type="led8_embd.py" name="led8_pub_node" output="screen" respawn="true" >
         <remap from="led8_data8" to="zzz/led8"/>
     </node>
-    <node pkg="zr_led8_595" type="led8_sub.py" name="led8_sub_node" output="screen" respawn="true" >
+    <node pkg="zr_led8_595" type="led8_pc.py" name="led8_sub_node" output="screen" respawn="true" >
         <remap from="led8_data8" to="zzz/led8"/>
     </node>
 </launch>

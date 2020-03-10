@@ -24,8 +24,8 @@ def pub():
         hello_str = "%s" %a
         rospy.loginfo(hello_str)   
 
-        msg.line1="1.02345678=%s"%hello_str  
-        msg.line2='2\32\1\2\3\4\5\6\789\10\11\12\13\14\15'#"2 %s"%hello_str 
+        msg.line1="Line1:%s"%hello_str  
+        msg.line2="Line2:%s"%hello_str 
         pub.publish(msg)
         
         rate.sleep()

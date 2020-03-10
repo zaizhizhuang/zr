@@ -2,15 +2,11 @@
     <node pkg="zr_screen_1602" type="screen_1602_pub.py" name="screen_1602_pub_node" output="screen" respawn="true" >
         <remap from="screen_1602" to="zzz/screen_1602"/>
     </node>
-    <node pkg="zr_screen_1602" type="screen_1602_sub.py" name="screen_1602_sub_node" output="screen" respawn="true" >
+    <node pkg="zr_screen_1602" type="screen_1602_embd.py" name="screen_1602_embd_node" output="screen" respawn="true" >
         <remap from="screen_1602" to="zzz/screen_1602"/>
-    </node>
-    <node pkg="zr_hw_cmd" type="cmd_srv_server.py" name="cmdserver" output="screen" respawn="true" >
-
         <remap from="zr_hw_cmd" to="zzzros/srv_cmd"/>
     </node>
-    <node pkg="zr_hw_cmd" type="cmd_srv_client.py" name="cmdclient" output="screen" respawn="true" >
-        
+    <node pkg="zr_hw_cmd" type="cmd_srv_client.py" name="cmdclient" output="screen" respawn="true" >        
         <remap from="zr_hw_cmd" to="zzzros/srv_cmd"/>
     </node>
 </launch>
