@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="zr_pwm16_pca9685" type="pwm16_pc.py" name="pwm16_pc_node" output="screen" respawn="true" >
+        <remap from="zr_hw_cmd" to="zzzros/srv_cmd"/>
+    </node>
+    <node pkg="zr_pwm16_pca9685" type="pwm16_embd.py" name="pwm16_embd_node" output="screen" respawn="true" >
+
+        <remap from="zr_hw_cmd" to="zzzros/srv_cmd"/>
+    </node>
+
+</launch>

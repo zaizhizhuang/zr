@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="rosserial_python" type="serial_node.py" name="pwm16_embd_node_comx" output="screen" respawn="true" >
+        <param name="port" value="COM3" type="string" />
+        <param name="baud" value="500000" type="int" />
+        <remap from="zr_hw_cmd" to="zzzros/srv"/>
+    </node>
+    <node pkg="zr_pwm16_pca9685" type="pwm16_pc.py" name="pwm16_pc_node" output="screen" respawn="true" >
+        <remap from="zr_hw_cmd" to="zzzros/srv"/>
+    </node>
+    
+</launch>
