@@ -93,3 +93,8 @@ bell字形如下
 roslaunch zr_screen_1602 screen_1602_demo.launch
 roslaunch zr_screen_1602 screen_1602_display.launch
 roslaunch zr_screen_1602 screen_1602_fake.launch
+
+video
+https://www.bilibili.com/video/av95252286
+gitbub
+https://github.com/zaizhizhuang/zr

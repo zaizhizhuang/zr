@@ -92,4 +92,7 @@ int characters[26] = {
 roslaunch zr_led8_595 led8_fake.launch
 roslaunch zr_led8_595 led8_demo.launch
 
-
+video
+https://www.bilibili.com/video/av95249210
+gitbub
+https://github.com/zaizhizhuang/zr
